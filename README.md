@@ -20,16 +20,11 @@ This project was developed to address the **manual burden of extracting informat
 - Extract structured data using OCR and layout detection
 - Let users **ask questions** based on the document
 - Return the **answer** visually and textually
-
----
-> ⚠️ **Diagram Rendering Notice**: GitHub doesn't support Mermaid diagrams by default. Use [VSCode Mermaid Preview](https://marketplace.visualstudio.com/items?itemName=vstirbu.vscode-mermaid-preview) or compatible tools to render.
-
-```mermaid
-graph TD
-  A[User Uploads Medical Form Image] --> B[Image Preprocessing]
-  B --> C[Layout Detection (YOLO)]
-  C --> D[OCR Text Extraction (Tesseract]
-  D --> E[Convert to Structured Format (Regex/Pandas)]
-  E --> F[Q&A Model (HuggingFace Transformers)]
-  F --> G[Frontend Display (Gradio)]
+1. 📤 User uploads a medical form image
+2. 🧼 Image preprocessing (grayscale, contrast enhancement)
+3. 🧭 Layout detection using  YOLO
+4. 🔍 OCR text extraction using Tesseract
+5. 🧾 Convert text into structured format
+6. 🧠 Run Q&A model to find the answer to the user’s question
+7. 🌐 Display result in Gradio interface with highlights
 
