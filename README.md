@@ -22,14 +22,14 @@ This project was developed to address the **manual burden of extracting informat
 - Return the **answer** visually and textually
 
 ---
-
-## 🧠 How It Works
+> ⚠️ **Diagram Rendering Notice**: GitHub doesn't support Mermaid diagrams by default. Use [VSCode Mermaid Preview](https://marketplace.visualstudio.com/items?itemName=vstirbu.vscode-mermaid-preview) or compatible tools to render.
 
 ```mermaid
 graph TD
   A[User Uploads Medical Form Image] --> B[Image Preprocessing]
-  B --> C[Layout Detection (YOLO/LayoutParser)]
-  C --> D[OCR Text Extraction (Tesseract/PaddleOCR)]
+  B --> C[Layout Detection (YOLO)]
+  C --> D[OCR Text Extraction (Tesseract]
   D --> E[Convert to Structured Format (Regex/Pandas)]
   E --> F[Q&A Model (HuggingFace Transformers)]
   F --> G[Frontend Display (Gradio)]
+
